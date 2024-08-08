@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthPlus</title>
+    <link rel="stylesheet" href="new_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">HealthPlus</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#general">General Check-Up</a></li>
+                    <li><a href="#tips">Health Tips</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Your Health, Our Priority</h2>
+            <p>Welcome to HealthPlus, where we care about your well-being.</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- New Photos Section -->
+    <section id="photos" >
+        <h2>Hospital Surveys</h2>
+        <div class="survey-photos">
+            <div class="carousel">
+                <img src="C:\Users\shaik\Health Plus\WhatsApp Image 2024-07-16 at 12.11.18_2a5599ec.jpg" alt="Hospital Survey 1" height="400px" width="500">
+                <img src="C:\Users\shaik\Health Plus\WhatsApp Image 2024-07-16 at 12.11.18_4a2e5694.jpg" alt="Hospital Survey 2" height="400px" width="500">
+                <img src="C:\Users\shaik\Health Plus\WhatsApp Image 2024-07-16 at 12.11.18_f638e330.jpg" alt="Hospital Survey 3" height="400px" width="500">
+                <img src="C:\Users\shaik\Health Plus\WhatsApp Image 2024-07-16 at 12.11.19_8abdadf8.jpg" alt="Hospital Survey 4" height="400px" width="500">
+                <img src="C:\Users\shaik\Health Plus\WhatsApp Image 2024-07-16 at 12.11.19_ddfb6d90.jpg" alt="Hospital Survey 5" height="400px" width="500">
+                <img src="C:\Users\shaik\Health Plus\WhatsApp Image 2024-07-16 at 12.11.19_e5269416.jpg" alt="Hospital Survey 5" height="400px" width="500">
+                <img src="C:\Users\shaik\Health Plus\WhatsApp Image 2024-07-16 at 12.11.20_9a39bfd2.jpg" alt="Hospital Survey 5" height="400px" width="500">
+                <img src="C:\Users\shaik\Health Plus\WhatsApp Image 2024-07-16 at 12.11.20_cc7717f1.jpg" alt="Hospital Survey 5" height="400px" width="500">
+
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 style="color: antiquewhite;">Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <a href="#general" class="btn" style="text-decoration:none"><b>General Check-Up</b></a>
+                    <p>Regular health check-ups for maintaining optimal health.</p>
+                </div>
+                <div class="service-card">
+                    <a href="https://www.narayanahealth.org/specialities/cardiology-adult" class="btn" style="text-decoration:none" target="_blank"><b>Cardiology</b></a>
+                    <p>Comprehensive heart care services by top cardiologists.</p>
+                </div>
+                <div class="service-card">
+                    <a href="https://intermountainhealthcare.org/services/pediatrics/services/" class="btn" style="text-decoration:none" target="_blank"><b>Pediatrics</b></a>
+                    <p>Expert health care services for children and adolescents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="general" class="general-checkup">
+        <div class="container">
+            <h2>Disease Diagnosis Tool</h2>
+            <div class="input-section">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="0">
+                <label for="symptoms">Symptoms:</label>
+                <input type="text" id="symptoms" name="symptoms" oninput="showSuggestions(this.value)">
+                <div id="suggestions"></div>
+                <button onclick="diagnose()">Diagnose</button>
+            </div>
+            <div id="results" class="results-section"></div>
+        </div>
+    </section>
+
+    <section id="tips" class="health-tips">
+        <div class="container">
+            <h2 style="color: antiquewhite;">Health Tips</h2>
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <h3>Stay Hydrated</h3>
+                    <p>Drink at least 8 glasses of water a day to keep hydrated.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Eat Healthy</h3>
+                    <p>Incorporate more fruits and vegetables into your diet.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Exercise Regularly</h3>
+                    <p>Engage in at least 30 minutes of physical activity daily.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Eat a Balanced Diet</h3>
+                    <p>Consume a variety of foods from all food groups to ensure your body gets the essential nutrients it needs.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Get Enough Sleep</h3>
+                    <p>Ensure you get 7-9 hours of quality sleep each night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experts" class="experts-section">
+        <div class="container">
+            <h2>What Experts Say</h2>
+            <div class="expert">
+                <div class="expert-info">
+                    <img src="C:\Users\shaik\health plus (2.0)\WhatsApp Image 2024-07-16 at 12.55.45_0cfdd21e.jpg" alt="Doctor 1" height="400px">
+                    <div class="expert-description">
+                        <h3>Dr.keerthi Reddy</h3>
+                        <p> Smoking and Alcohol: Offer advice on quitting smoking and moderation in alcohol consumption. Sleep: Share tips for improving sleep quality and establishing good sleep habits. Health Monitoring: Encourage self-monitoring of health indicators like blood pressure, weight, and cholesterol levels.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="expert">
+                <div class="expert-info">
+                    <div class="expert-description">
+                        <h3>Dr.Gaurav Kharya</h3>
+                        <p>Healthy Eating: Provide tips on balanced nutrition, meal planning, and healthy eating habits. Physical Activity: Encourage regular exercise and physical activity suitable for different age groups and fitness levels. Mental Health: Include advice on stress management, mindfulness, and techniques for promoting good mental health.</p>
+                    </div>
+                    <img src="C:\Users\shaik\health plus (2.0)\WhatsApp Image 2024-07-16 at 12.55.46_486d3f4b.jpg" alt="Doctor 2" height="400px">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <div class="contact-section">
+            <h2>Famous Hospitals in Andhra Pradesh</h2>
+            <div class="hospital-grid">
+                <div class="hospital-item" data-city="Visakhapatnam">
+                    <h3>Visakhapatnam</h3>
+                    <div class="hospital-details">
+                        <p>Care Hospital</p>
+                        <p>Emergency Number: 108</p>
+                    </div>
+                </div>
+                <div class="hospital-item" data-city="Vijayawada">
+                    <h3>Vijayawada</h3>
+                    <div class="hospital-details">
+                        <p>Unity Hospital</p>
+                        <p>Emergency Number: 108</p>
+                    </div>
+                </div>
+                <div class="hospital-item" data-city="Guntur">
+                    <h3>Guntur</h3>
+                    <div class="hospital-details">
+                        <p>Aster Ramesh Hospital</p>
+                        <p>Emergency Number: 108</p>
+                    </div>
+                </div>
+                <div class="hospital-item" data-city="Guntur">
+                    <h3>Tirupati</h3>
+                    <div class="hospital-details">
+                        <p>sv Hospital</p>
+                        <p>Emergency Number: 108</p>
+                    </div>
+                </div>
+                <div class="hospital-item" data-city="Guntur">
+                    <h3>Anathapur</h3>
+                    <div class="hospital-details">
+                        <p>Kims Hospital</p>
+                        <p>Emergency Number: 108</p>
+                    </div>
+                </div>
+                <div class="hospital-item" data-city="Guntur">
+                    <h3>Kadapa</h3>
+                    <div class="hospital-details">
+                        <p>Ameen multi speciality Hospital</p>
+                        <p>Emergency Number: 108</p>
+                    </div>
+                </div>
+            </div>
+            <div class="side-info">
+                <div class="side-info-content">
+                    <p><h4 style="color: black; ">Ibtihajulla Sha</h4></p>
+                    <p><h4 style="color: black; ">shaikibtihaj07@gmail.com</h4></p>
+                    <p><h3 style="color: black; ">Refered by : Dr.Shiva kumar</h3></p>
+                    <p><h3 style="color: black; ">shivakumar.cse@jntua.ac.in</h3></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 HealthPlus. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    
+    
+
+</body>
+</html>
